@@ -1,0 +1,181 @@
+/* Styles communs pour tous les niveaux d'apprentissage des lettres */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: url('/images/picnic-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #4CAF50;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lettres-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.lettre-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.lettre-card:hover {
+    transform: scale(1.05);
+}
+
+.lettre {
+    font-size: 4em;
+    color: #2196F3;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.quiz-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.quiz-button:hover {
+    background-color: #45a049;
+}
+
+.hibou-guide {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background: url('/images/hibou.png') no-repeat center center;
+    background-size: contain;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Styles spécifiques pour les quiz */
+.question {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #333;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.option {
+    background: white;
+    border: 3px solid #2196F3;
+    border-radius: 15px;
+    padding: 20px;
+    width: 120px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.option:hover {
+    transform: scale(1.05);
+    background: #e3f2fd;
+}
+
+.option.correct {
+    background: #4CAF50;
+    color: white;
+    border-color: #45a049;
+}
+
+.option.wrong {
+    background: #f44336;
+    color: white;
+    border-color: #da190b;
+}
+
+.feedback {
+    font-size: 1.5em;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.feedback.success {
+    background: #4CAF50;
+    color: white;
+}
+
+.feedback.error {
+    background: #f44336;
+    color: white;
+}
+
+.next-button {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.next-button.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
