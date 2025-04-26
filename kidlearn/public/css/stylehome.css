@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Hauteur = 100% de la fenêtre */
+    background-image: url("../image/backgrounk.png");
+    background-size: cover;        /* L'image couvre toute la zone */
+    background-repeat: no-repeat;  /* Pas de répétition */
+    background-position: center;   /* Centrée horizontalement et verticalement */
+    background-attachment: fixed;  /* L'image reste fixe au scroll (effet paralaxe) */
+}
+.btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn:hover {
+    background-color: #218838;
+}
+.btn-container {
+    text-align: center;
+    padding-top: 300px;
+}
+#newButtons {
+    display: none;
+    margin-top: 20px;
+    padding: 20px; /* Ajout d'un peu d'espace autour du contenu */
+    border: 7px solid white; /* Bordure blanche */
+    background-color: rgb(140, 222, 228); /* Fond légèrement transparent pour contraste */
+    border-radius: 8px; /* Bords arrondis pour l'encadré */
+    width: 129px; /* Largeur de l'encadré */
+    margin-left: auto;
+    margin-right: auto; /* Centrer l'encadré */
+    font-size: 20px;
+    text-align: center;
+    color:azure;
+}
+.menu-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Style pour les liens cachés au départ */
+#menu-links {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+#menu-links a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+}
+
+#menu-links a:hover {
+    background-color: #f8f9fa;
+}
