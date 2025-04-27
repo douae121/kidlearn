@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Hauteur = 100% de la fenêtre */
+    background-image: url("../image/enfant.png");
+    background-size: cover;        /* L'image couvre toute la zone */
+    background-repeat: no-repeat;  /* Pas de répétition */
+    background-position: center;   /* Centrée horizontalement et verticalement */
+    background-attachment: fixed;  /* L'image reste fixe au scroll (effet paralaxe) */
+}
+.img-1 {
+    width: 190px;     /* largeur personnalisée */
+    height: auto;     /* pour garder les proportions */
+    display: block;   /* optionnel : pour mieux gérer le positionnement */
+    margin: 0 auto;   /* centrer l’image horizontalement */
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    border: 3px solid #fff;
+    border-radius: 20%;
+}
+.img-2 {
+    width: 190px;     /* largeur personnalisée */
+    height: auto;     /* pour garder les proportions */
+    display: block;   /* optionnel : pour mieux gérer le positionnement */
+    margin: 0 auto;   /* centrer l’image horizontalement */
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    border: 3px solid #fff;
+    border-radius: 20%;
+}
+.img-3 {
+    width: 190px;     /* largeur personnalisée */
+    height: auto;     /* pour garder les proportions */
+    display: block;   /* optionnel : pour mieux gérer le positionnement */
+    margin: 0 auto;   /* centrer l’image horizontalement */
+    position: absolute;
+    top: 370px;
+    left: 250px;
+    border: 3px solid #fff;
+    border-radius: 20%;
+}
+.img-4 {
+    width: 190px;     /* largeur personnalisée */
+    height: auto;     /* pour garder les proportions */
+    display: block;   /* optionnel : pour mieux gérer le positionnement */
+    margin: 0 auto;   /* centrer l’image horizontalement */
+    position: absolute;
+    top: 370px;
+    left: 500px;
+    border: 3px solid #fff;
+    border-radius: 20%;
+}

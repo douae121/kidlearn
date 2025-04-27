@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Hauteur = 100% de la fenêtre */
+    background-image: url("../image/backgrounk.png");
+    background-size: cover;        /* L'image couvre toute la zone */
+    background-repeat: no-repeat;  /* Pas de répétition */
+    background-position: center;   /* Centrée horizontalement et verticalement */
+    background-attachment: fixed;  /* L'image reste fixe au scroll (effet paralaxe) */
+}
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 90px;          /* ou adapte à ta taille préférée */
+    width: 90px;
+    object-fit: cover;     /* pour que l’image remplisse bien le cadre rond */
+    border-radius: 50%;    /* rend l’image ronde */
+    border: 2px solid #fff; /* optionnel : bordure blanche autour du cercle */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); /* optionnel : ombre légère */
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #51cf6e;
+    color: white;
+    border:2px solid white ;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn:hover {
+    background-color: #218838;
+}
+.btn-container {
+    text-align: center;
+    padding-top: 200px;
+}
+
+#newButtons {
+    display: none;
+    margin-top: 20px;
+    padding: 20px; /* Ajout d'un peu d'espace autour du contenu */
+    border: 7px solid white; /* Bordure blanche */
+    background-color: rgb(125, 225, 232); /* Fond légèrement transparent pour contraste */
+    border-radius: 8px; /* Bords arrondis pour l'encadré */
+    width: 129px; /* Largeur de l'encadré */
+    margin-left: auto;
+    margin-right: auto; /* Centrer l'encadré */
+    font-size: 20px;
+    text-align: center;
+    color:azure;
+}
+/* Menu latéral (caché par défaut à droite) */
+#menu-links {
+    position: fixed;
+    top: 0;
+    right: -300px; /* caché hors de l'écran */
+    width: 250px;
+    height: 100vh;
+    background-color: #afed719c;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+}
+
+/* Quand le menu est actif (visible) */
+#menu-links.show {
+    right: 0;
+}
+
+/* Style des liens du menu */
+#menu-links a {
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Style du bouton "trois points" */
+.menu-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1000;
+}
