@@ -22,6 +22,9 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::get('/enfant', function () {
-    return view('enfant');
-});
+    return view('acceuil');
+})->name('enfant');
 
+Route::get('/acceuil', function () {
+    return view('acceuil');
+})->name('acceuil');
